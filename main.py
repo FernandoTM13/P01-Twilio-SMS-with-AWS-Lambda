@@ -26,6 +26,7 @@ for i in range(24):
 nuevo_df = to_dataFrame(datos)
 
 plantilla = get_plantilla_mensaje(dia, query,nuevo_df)
+
 numero_receiver = '+51916017283'
 
 enviar_mensaje = send_message(Twilio_account_sid, Twilio_account_auth, plantilla,Twilio_numer, numero_receiver)
